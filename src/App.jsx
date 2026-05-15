@@ -395,7 +395,7 @@ export default function App() {
                         fontWeight: '700',
                         flexShrink: 0
                       }}>
-                        {usuario.nombre.charAt(0).toUpperCase()}
+                        {usuario.nombre?.charAt(0)?.toUpperCase() ?? '?'}
                       </div>
                       <div style={{ flex: 1 }}>
                         <h3 style={{
@@ -404,7 +404,7 @@ export default function App() {
                           fontWeight: '700',
                           color: '#333'
                         }}>
-                          {usuario.nombre}
+                          {usuario.nombre ?? '(sin nombre)'}
                         </h3>
                         <p style={{
                           margin: '5px 0 0 0',
@@ -431,7 +431,7 @@ export default function App() {
                         color: '#555'
                       }}>
                         <span style={{ fontSize: '1.2rem' }}>📞</span>
-                        <strong>Tel:</strong> {usuario.telefono}
+                        <strong>Tel:</strong> {usuario.telefono ?? '(sin teléfono)'}
                       </div>
                       <div style={{
                         display: 'flex',
@@ -441,7 +441,7 @@ export default function App() {
                         color: '#555'
                       }}>
                         <span style={{ fontSize: '1.2rem' }}>✉️</span>
-                        <strong>Email:</strong> {usuario.correo}
+                        <strong>Email:</strong> {usuario.correo ?? '(sin correo)'}
                       </div>
                     </div>
                   </div>
