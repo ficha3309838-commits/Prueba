@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // URL de tu API - ajústala según tu configuración
-const API_URL = 'https://api2-production-26fb.up.railway.app';
+const API_URL = 'https://d1a4rpgpe9a0nj.cloudfront.net/';
 
 export default function App() {
   const [usuarios, setUsuarios] = useState([]);
