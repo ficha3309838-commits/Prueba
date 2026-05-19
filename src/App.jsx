@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // URL de tu API - ajústala según tu configuración
-const API_URL = 'https://d1a4rpgpe9a0nj.cloudfront.net';
+const API_URL = 'https://d3e8vgn6ov99xf.cloudfront.net';
 
 export default function App() {
   const [usuarios, setUsuarios] = useState([]);
